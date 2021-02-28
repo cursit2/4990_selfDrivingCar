@@ -34,7 +34,7 @@ public class Localization : MonoBehaviour
     public Vector3 GPSguess;
     public float GPSguessDistance;
     public float DistanceToKnownPoint;
-    private float errorRange = 2.5f;
+    private float errorRange = 1.5f;
     private bool gotFirstHitleft = false;
     private bool gotFirstHitRight = false;
 
@@ -48,7 +48,7 @@ public class Localization : MonoBehaviour
     {
         GPSGuesser();
         //get gps guess within error range. repeat at a reasonable rate
-        InvokeRepeating("GPSGuesser", 0.4f, 0.4f);
+        InvokeRepeating("GPSGuesser", 0.2f, 0.2f);
     }
     void Update()
     {

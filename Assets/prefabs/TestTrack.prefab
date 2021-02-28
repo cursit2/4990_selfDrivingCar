@@ -182,6 +182,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Intersection (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7950725472913050141, guid: 1bd186805d5dc8840a9c90f104e63d43,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1bd186805d5dc8840a9c90f104e63d43, type: 3}
 --- !u!4 &1961272248036777981 stripped
@@ -406,6 +411,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Intersection
+      objectReference: {fileID: 0}
+    - target: {fileID: 7950725472913050141, guid: 1bd186805d5dc8840a9c90f104e63d43,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1bd186805d5dc8840a9c90f104e63d43, type: 3}
@@ -707,6 +717,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Intersection (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7950725472913050141, guid: 1bd186805d5dc8840a9c90f104e63d43,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1bd186805d5dc8840a9c90f104e63d43, type: 3}
 --- !u!4 &7931653678877252968 stripped
@@ -781,6 +796,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Intersection (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7950725472913050141, guid: 1bd186805d5dc8840a9c90f104e63d43,
+        type: 3}
+      propertyPath: m_Layer
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1bd186805d5dc8840a9c90f104e63d43, type: 3}

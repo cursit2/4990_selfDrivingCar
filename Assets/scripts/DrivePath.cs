@@ -4,30 +4,34 @@ using UnityEngine;
 
 public class DrivePath : MonoBehaviour
 {
-    public Path path;
     public Localization localization;
     public Transform car;
     public CarMovement movement;
     public float rotationSpeed = 2f;
-    private List<Transform> pathNodes;
     private Vector3 direction;
     private Quaternion lookRotation;
+    private List<Node> drivePath;
+    private Grid gridReference;
+    public GameObject manager;
 
-    private void Update()
+
+    private void Awake()//When the program starts
     {
-        pathNodes = path.GetNodes();
+        gridReference = manager.GetComponent<Grid>();//Get a reference to the game manager
     }
-
     void FixedUpdate()
     {
-
-        if (pathNodes.Count >= 1) {
+        drivePath = gridReference.FinalPath;
+        if (drivePath.Count >= 1) {
             //USING POSITION FOUND FROM LOCALIZATION
-            direction = (pathNodes[0].position - localization.truePosition);
+            direction = ((drivePath[0].vPosition + new Vector3(0, 0.5f, 0)) - localization.truePosition);
             lookRotation = Quaternion.LookRotation(direction);
-            transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * rotationSpeed);
-        }
 
+
+            transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * rotationSpeed);
+
+        }
         else return;
     }
+    
 }
