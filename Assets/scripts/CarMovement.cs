@@ -7,7 +7,7 @@ using UnityEngine;
 public class CarMovement : MonoBehaviour
 {
     public Rigidbody rb;
-    public float forwardSpeed = 3f, reverseSpeed = 1f, maxSpeed = 20f, turnStrength = 90f, speedInput, turnInput;
+    public float forwardSpeed = 3f, reverseSpeed = 3f, maxSpeed = 20f, turnStrength = 90f, speedInput, turnInput;
 
     private void Start()
     {
@@ -44,12 +44,12 @@ public class CarMovement : MonoBehaviour
 
     public void MoveForward()
     {
-        speedInput = Input.GetAxis("Vertical") * forwardSpeed * 1000f;
+        speedInput = forwardSpeed * 1000f;
         transform.position = rb.transform.position;
     }
     public void MoveBackward()
     {
-        speedInput = Input.GetAxis("Vertical") * reverseSpeed * 1000f;
+        speedInput =  -1 * reverseSpeed * 1000f;
         transform.position = rb.transform.position;
     }
     public void MoveLeft()

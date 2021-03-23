@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Wall
   - Road
+  - Node
+  - EndNode
   layers:
   - Default
   - TransparentFX

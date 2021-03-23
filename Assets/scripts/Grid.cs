@@ -7,8 +7,8 @@ public class Grid : MonoBehaviour
 {
 
     public Transform StartPosition;//This is where the program will start the pathfinding from.
-    public LayerMask WallMask;//This is the mask that the program will look for when trying to find obstructions to the path.
-    public LayerMask WallMask2;
+    public LayerMask WallMask;//using to check road
+    public LayerMask WallMask2; //check for walls
     public Vector2 vGridWorldSize;//A vector2 to store the width and height of the graph in world units.
     public float fNodeRadius;//This stores how big each square on the graph will be
     public float fDistanceBetweenNodes;//The distance that the squares will spawn from eachother.
